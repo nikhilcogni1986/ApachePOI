@@ -31,10 +31,10 @@ public class ReadExcelWithIterator
                  XSSFCell cell = (XSSFCell) cellIterator.next();
                   switch(cell.getCellType())
                   {
-                      case 1:
+                      case STRING:
                           System.out.print(cell.getStringCellValue());
                           break;
-                      case 0:
+                      case NUMERIC:
                           System.out.print(cell.getNumericCellValue());
                           break;
                       default:

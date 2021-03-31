@@ -38,10 +38,10 @@ public class ReadExcelData
                         //get the types of the cell and perform operations based on the same
                         switch(cell.getCellType())
                         {
-                              case 1:
+                              case STRING:
                                      System.out.print(cell.getStringCellValue());
                                      break;
-                              case 0:
+                              case NUMERIC:
                                      System.out.print(cell.getNumericCellValue());
                                      break;
                               default:
